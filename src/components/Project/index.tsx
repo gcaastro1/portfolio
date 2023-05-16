@@ -55,25 +55,25 @@ export const Project = (): JSX.Element => {
             </ProjectTitle>
 
             <ProjectStack>
-              <Text type="body2" color="grey2">
+              <Text type="body2" color="grey4">
                 Primary Language:
               </Text>
               {repository.language ? (
                 <ProjectStackTech>
-                  <Text color="grey2" type="body2">
+                  <Text color="grey4" type="body2">
                     {repository.language}
                   </Text>
                 </ProjectStackTech>
               ) : (
                 <ProjectStackTech>
-                  <Text color="grey2" type="body2">
+                  <Text color="grey4" type="body2">
                     Primary language not identified
                   </Text>
                 </ProjectStackTech>
               )}
             </ProjectStack>
 
-            <Text type="body1" color="grey2">
+            <Text type="body1" color="grey4">
               {repository.description?.substring(0, 129)}
             </Text>
             <ProjectLinks>

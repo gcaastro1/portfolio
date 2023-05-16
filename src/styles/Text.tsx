@@ -1,5 +1,6 @@
 import { styled } from '@/styles/stitches.config';
 import { colors } from '@/styles/Global'
+import Typical from 'react-typical';
 
 const headingsDefaultConfig = {
     fontFamily: "$titles"
@@ -10,7 +11,6 @@ const bodyDefaultConfig = {
 }
 
 export const Text = styled("p", {
-    color: "$grey1",
     fontSize: "$text1",
     fontWeight: 400,
     variants: {
@@ -57,3 +57,15 @@ export const Text = styled("p", {
         ...colors
     }
 })
+
+export const TypicalText = styled(Typical, {
+    color: "$grey4",
+    fontSize: "$title1",
+    lineHeight: "$title1",
+    fontWeight: 700,
+    ...headingsDefaultConfig,
+    "@mobile": {
+        fontSize: "$title1Mobile",
+        lineHeight: "$title1Mobile"
+    }
+  })

@@ -1,6 +1,6 @@
 // Styles
 import { Container, Flex } from "@/styles/Global";
-import { Text } from "@/styles/Text";
+import { Text, TypicalText } from "@/styles/Text";
 import { Button } from "@/styles/Buttons";
 
 // Components
@@ -29,7 +29,7 @@ import {
 
 export const Home = (): JSX.Element => {
   const gihubUrl = `https://github.com/${userData.githubUser}`;
-  const portfolioUrl = `https://github.com/${userData.githubUser}/my-portfolio`;
+  const portfolioUrl = `https://github.com/${userData.githubUser}/portfolio`;
 
   return (
     <main id="home">
@@ -44,20 +44,11 @@ export const Home = (): JSX.Element => {
                 width={"48px"}
                 height={"48px"}
               />
-              <Text color="grey4">Hello, my name is {userData.nameUser}</Text>
+              
+             
             </Flex>
-            <Text as="h1" type="heading1" color="grey5">
-            I{" "}
-              <Text as="span" type="heading1" color="brand1">
-                love
-              </Text>{" "}
-              creating and{" "}
-              <Text as="span" type="heading1" color="brand1">
-                developing
-              </Text>{" "}
-              projects
-            </Text>
-            <Text type="body1" color="grey2">
+            <TypicalText steps={['Hello!', 1000,'My name is '+ userData.nameUser + '.', 2000, 'I am fullstack developer.', 2000]} loop={Infinity} wrapper="h1"/>
+            <Text type="body1" color="grey4">
               Discover here in this environment, created especially for you, all
               my projects and technologies
             </Text>
@@ -94,7 +85,7 @@ export const Home = (): JSX.Element => {
               <Text as="h2" type="heading4" color="grey4">
                 My projects
               </Text>
-              <Text as="p" type="body1" color="grey2">
+              <Text as="p" type="body1" color="grey4">
                 Some of my{" "}
                 <Text as="span" color="brand5">
                   side projects

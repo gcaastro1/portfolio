@@ -7,6 +7,7 @@ import meIlustration from "@/public/static/img/background/me-ilustration.svg";
 import backgroundImg from "@/public/static/img/background/header-bg.svg";
 
 import dots from "@/public/static/img/background/dots.svg";
+import Typical from "react-typical";
 
 export const Header = styled("header", {
   backgroundColor: "$grey1",
@@ -68,8 +69,8 @@ export const HeaderButtonsArea = styled(Flex, {
 export const UserImage = styled("img", {
   borderRadius: "50%",
   "@mobile": {
-    width: "2.25rem",
-    height: "2.25rem",
+    width: "200px",
+    height: "200px",
   },
 });
 

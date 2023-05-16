@@ -23,7 +23,7 @@ export const ProjectLinks = styled(Flex, {
 
 export const ProjectLink = styled("a", {
   fontSize: "1rem",
-  color: "$grey2",
+  color: "$grey4",
   fontWeight: "500",
   marginRight: "$2",
   display: "flex",
@@ -31,7 +31,7 @@ export const ProjectLink = styled("a", {
   lineHeight: "0",
 
   "&:hover": {
-    color: "$grey5",
+    color: "$brand1",
   },
 
   [`& svg`]: {
@@ -42,7 +42,12 @@ export const ProjectLink = styled("a", {
 export const ProjectTitle = styled(Text, {});
 
 export const Project = styled("article", {
-  marginTop: "4rem",
+  marginTop: "2rem",
+  
+  border: "2px solid $grey2",
+  padding: "2rem",
+  borderRadius: "8px",
+
   [`&:first-child`]: {
     [`& ${ProjectTitle}:first-child`]: {
       position: "relative",
