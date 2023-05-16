@@ -49,6 +49,10 @@ export const Home = (): JSX.Element => {
             </Flex>
             <TypicalText steps={['Hello!', 1000,'My name is '+ userData.nameUser + '.', 2000, 'I am fullstack developer.', 2000]} loop={Infinity} wrapper="h1"/>
             <Text type="body1" color="grey4">
+              Passionate about art and innovation, always looking for new knowledge. 
+              I worked for 4 years in the area of digital product design. 
+              I'm always looking to improve my skills and knowledge to create better experiences for users. 
+              And I'm currently specializing in web development. <br/><br/>
               Discover here in this environment, created especially for you, all
               my projects and technologies
             </Text>
